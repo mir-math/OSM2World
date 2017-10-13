@@ -435,6 +435,16 @@ public class JOGLTargetShader extends AbstractJOGLTarget implements JOGLTarget {
 			
 			defaultShader.disableShader();
 		}
+		
+		finishRendering(gl);
+	}
+
+	/**
+	 * Disables culling and depth testing
+	 */
+	static final void finishRendering(GL gl) {
+		gl.glDisable(GL_CULL_FACE);
+		gl.glDisable(GL_DEPTH_TEST);
 	}
 	
 	static final void applyRenderingParameters(GL3 gl,
@@ -488,7 +498,7 @@ public class JOGLTargetShader extends AbstractJOGLTarget implements JOGLTarget {
 	}
 
 	/**
-	 * similar to {@link #applyProjectionMatrices(GL2, Projection)},
+	 * similar to {@link #applyProjectionMatrices(PMVMatrix, Projection)},
 	 * but allows rendering only a part of the "normal" image.
 	 */
 	static final void applyProjectionMatricesForPart(PMVMatrix pmvMatrix, Projection projection,

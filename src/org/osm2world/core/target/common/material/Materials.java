@@ -44,9 +44,9 @@ public final class Materials {
 	public static final ConfMaterial ASPHALT =
 		new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.3f, 0.3f));
 	public static final ConfMaterial BRICK =
-			new ConfMaterial(Interpolation.FLAT, new Color(1.0f, 0.5f, 0.25f));
+		new ConfMaterial(Interpolation.FLAT, new Color(1.0f, 0.5f, 0.25f));
 	public static final ConfMaterial COBBLESTONE =
-			new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.3f, 0.3f));
+		new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.3f, 0.3f));
 	public static final ConfMaterial CONCRETE =
 		new ConfMaterial(Interpolation.FLAT, new Color(0.55f, 0.55f, 0.55f));
 	public static final ConfMaterial EARTH =
@@ -56,7 +56,9 @@ public final class Materials {
 	public static final ConfMaterial GRASS =
 		new ConfMaterial(Interpolation.FLAT, new Color(0.0f, 0.8f, 0.0f));
 	public static final ConfMaterial GRASS_PAVER =
-			new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.5f, 0.3f));
+		new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.5f, 0.3f));
+	public static final ConfMaterial SCRUB =
+		new ConfMaterial(Interpolation.FLAT, new Color(0.0f, 0.8f, 0.0f));
 	public static final ConfMaterial GRAVEL =
 		new ConfMaterial(Interpolation.FLAT, new Color(0.4f, 0.4f, 0.4f));
 	public static final ConfMaterial PAVING_STONE =
@@ -136,9 +138,11 @@ public final class Materials {
 	public static final ConfMaterial SPLIT_RAIL_FENCE =
 		new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.2f, 0.2f));
 	public static final ConfMaterial CHAIN_LINK_FENCE =
-			new ConfMaterial(Interpolation.FLAT, Color.LIGHT_GRAY);
-	public static final ConfMaterial CHAIN_LINK_FENCE_POST =
-			new ConfMaterial(Interpolation.FLAT, new Color(0.1f, 0.5f, 0.1f));
+		new ConfMaterial(Interpolation.FLAT, new Color(188, 198, 204));
+	public static final ConfMaterial METAL_FENCE =
+		new ConfMaterial(Interpolation.FLAT, new Color(188, 198, 204));
+	public static final ConfMaterial METAL_FENCE_POST =
+		new ConfMaterial(Interpolation.FLAT, new Color(188, 198, 204));
 		
 	public static final ConfMaterial BRIDGE_DEFAULT =
 		new ConfMaterial(Interpolation.FLAT, Color.GRAY);
@@ -203,6 +207,26 @@ public final class Materials {
 
 	public static final ConfMaterial SOLAR_PANEL =
 			new ConfMaterial(Interpolation.FLAT, Color.BLUE);
+
+	public static final ConfMaterial PITCH_BEACHVOLLEYBALL =
+			new ConfMaterial(Interpolation.FLAT, new Color(241, 233, 80));
+	public static final ConfMaterial PITCH_SOCCER =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.0f, 0.8f, 0.0f));
+	public static final ConfMaterial PITCH_TENNIS_ASPHALT =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.3f, 0.3f));
+	public static final ConfMaterial PITCH_TENNIS_CLAY =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.8f, 0.0f, 0.0f));
+	public static final ConfMaterial PITCH_TENNIS_GRASS =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.0f, 0.8f, 0.0f));
+	public static final ConfMaterial PITCH_TENNIS_SINGLES_ASPHALT =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.3f, 0.3f, 0.3f));
+	public static final ConfMaterial PITCH_TENNIS_SINGLES_CLAY =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.8f, 0.0f, 0.0f));
+	public static final ConfMaterial PITCH_TENNIS_SINGLES_GRASS =
+			new ConfMaterial(Interpolation.FLAT, new Color(0.0f, 0.8f, 0.0f));
+	
+	public static final ConfMaterial TENNIS_NET =
+			new ConfMaterial(Interpolation.FLAT, Color.WHITE);
 	
 	public static final ConfMaterial SKYBOX =
 		new ConfMaterial(Interpolation.FLAT, new Color(0, 0, 1),
@@ -227,9 +251,11 @@ public final class Materials {
 		surfaceMaterialMap.put("paving_stones", PAVING_STONE);
 		surfaceMaterialMap.put("pebblestone", PEBBLESTONE);
 		surfaceMaterialMap.put("sand", SAND);
+		surfaceMaterialMap.put("steel", STEEL);
 		surfaceMaterialMap.put("tartan", TARTAN);
 		surfaceMaterialMap.put("unpaved", EARTH);
 		surfaceMaterialMap.put("wood", WOOD);
+		surfaceMaterialMap.put("scrub", SCRUB);
 
 		try {
 			for (Field field : Materials.class.getFields()) {
